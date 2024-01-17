@@ -1,0 +1,55 @@
+.hero {
+	background: url(../assets/webp_images/radu-florin-CwTBt6jyagQ-unsplash\ 1.webp)
+		center/cover no-repeat;
+	width: 100%;
+	height: 890px;
+}
+
+.hero__content {
+	padding: 180px 0px 0px;
+	max-width: 420px;
+	display: flex;
+	flex-direction: column;
+	justify-content: start;
+	align-items: start;
+}
+.hero__title {
+	color: var(--co-green);
+	font-weight: 700;
+	font-size: 65px;
+}
+
+.hero__desc {
+	margin: 25px 0px 50px;
+	color: var(--co-light-black);
+}
+
+.hero__content .btn {
+	height: 65px;
+	width: 230px;
+}
+
+@media (max-width: 768px) {
+	.hero {
+		height: 700px;
+	}
+	.hero__content {
+		padding: 80px 0px 0px;
+	}
+}
+/* MEDIA FOR NICE TITLE WRAP */
+@media (max-width: 480px) {
+	/* Movement the image to show the main picture */
+	.hero {
+		background: linear-gradient(
+				180deg,
+				rgba(245, 246, 252, 0.52) rgba(255, 176, 139, 0.28)
+			)
+			url(../assets/webp_images/radu-florin-CwTBt6jyagQ-unsplash\ 1.webp) 60%
+			50% / cover no-repeat;
+	}
+	.hero__title {
+		font-size: 45px;
+		max-width: 350px;
+	}
+}
