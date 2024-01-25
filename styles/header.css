@@ -55,4 +55,13 @@
 	.header__nav {
 		display: none;
 	}
+	.header__wrapper {
+		padding: 0 0 0 50px;
+	}
+}
+
+@media (max-width: 390px) {
+	.header__actions .btn {
+		width: 90px;
+	}
 }
